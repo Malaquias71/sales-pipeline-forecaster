@@ -52,7 +52,13 @@ No server required — fully client-side.
 
 ## Screenshots
 
-*(Optional: add screenshots of your app here to showcase the UI.)*
+<img width="874" height="625" alt="image" src="https://github.com/user-attachments/assets/62f13496-c112-4348-a1fc-04baa61c0c93" />
+
+<img width="831" height="591" alt="image" src="https://github.com/user-attachments/assets/396231e6-4aaf-44f9-b9ef-cfb2dbcb7f53" />
+
+
+
+
 
 ## Contributing
 
