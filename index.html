@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sales Pipeline Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Sales Pipeline Tracker</h1>
+
+    <form id="dealForm">
+        <label>Deal Name</label>
+        <input type="text" id="dealName" required />
+
+        <label>Deal Value</label>
+        <input type="number" id="dealValue" required />
+
+        <label>Probability (%)</label>
+        <input type="number" id="dealProbability" min="0" max="100" required />
+
+        <button type="submit" class="primary-btn">
+            Add Deal
+        </button>
+    </form>
+
+    <div class="metrics">
+        <div class="metric-box">
+            <h3>Total Pipeline</h3>
+            <p id="totalPipeline">$0</p>
+    </div>
+    
+    <div class="metric-box">
+        <h3>Total Expected</h3>
+        <p id="totalExpected">$0</p>
+    </div>
+
+    <div class="metric-box">
+        <h3> Deals</h3>
+        <p id="dealCount">0</p>
+    </div>
+    </div>
+
+    <button id="sortExpected" class="primary-btn">
+        Sort by Expected Revenue
+    </button>
+
+
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Value</th>
+                <th>Probability</th>
+                <th>Expected Revenue</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody id="dealTableBody">
+        </tbody>
+    </table>
+    </div>
+    <script src="script.js"></script>
+    
+</body>
+</html>

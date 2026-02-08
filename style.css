@@ -1,0 +1,230 @@
+/* ===============================
+   GLOBAL RESET
+================================= */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "inter", system-ui, -apple-system, sans-serif;
+
+}
+
+
+/* ===============================
+   BODY
+================================= */
+
+body {
+    background: linear-gradient(135deg, #0f172a, #1e293b);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #f1f5f9;
+    padding: 2rem;
+
+}
+
+/* ===============================
+   MAIN CONTAINER
+================================= */
+
+.container {
+    background: #1e293b;
+    width: 100%;
+    max-width: 800px;
+    padding: 2.5rem;
+    border-radius: 18px;
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.5);
+
+}
+
+.metrics {
+    display: grid;
+    grid-template-columns;
+    gap: 1rem;
+    margin-bottom: 2rem;
+
+}
+
+.metric-box {
+    background: #0f172a;
+    padding: 1rem;
+    border-radius: 12px;
+    text-align: center;
+    transition: 0.2s ease;
+
+}
+
+.metric-box:hover {
+    transform: translateY(-3px);
+    background: #1a2332;
+
+}
+
+.metric-box h3 {
+    font-size: 0.8rem;
+    opacity: 0.7;
+    margin-bottom: 0.5rem;
+
+}
+
+.metric-box p {
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+/* ===============================
+   HEADER
+================================= */
+
+h1 {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 1.8rem;
+    font-weight: 600;
+
+}
+
+/* ===============================
+   FORM
+================================= */
+
+form {
+    display: grid;
+    gap: 1rem;
+    margin-bottom: 2rem;
+
+}
+
+label {
+    font-size: 0.85rem;
+    opacity: 0.8;
+
+}
+
+input {
+    padding: 0.75rem;
+    border-radius: 10px;
+    border: none;
+    background: #0f172a;
+    color: white;
+    font-size: 1rem;
+    outline: none;
+    transition: 0.2s ease;
+
+}
+
+input:focus {
+    border: 2px solid #3b82f6;
+
+}
+
+/* ===============================
+   BUTTON
+================================= */
+
+button {
+    padding: 0.9rem;
+    border-radius: 10px;
+    border: none;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.2s ease;
+
+}
+
+/* Primary Button */
+
+.primary-btn {
+    background: #3b82f6;
+    color: white;
+
+}
+
+.primary-btn:hover {
+    background: #2563eb;
+    transform: translateY(-2px);
+
+}
+
+
+/* Delete Button */
+
+.delete-btn {
+    background: #ef4444;
+    color: white;
+    padding: 0.4rem;
+    font-size: 0.8rem;
+
+}
+
+.delete-btn:hover {
+    background: #dc2626;
+
+}
+
+.edit-btn {
+    background: #f59e0b;
+    color: white;
+    padding: 0.4rem;
+    font-size: 0.8rem;
+    margin-right: 0.3rem;
+}
+
+.edit-btn:hover {
+    background: #d97706;
+}
+
+/* ===============================
+   TABLE
+================================= */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+
+}
+
+thead {
+    background: #0f172a;
+
+}
+
+th {
+    text-align: left;
+    padding: 0.8rem;
+    font-weight: 500;
+    font-size: 0.9rem;
+    opacity: 0.8;
+
+}
+
+td {
+    padding: 0.8rem;
+    border-bottom: 1px solid #334155;
+    font-size: 0.9rem;
+
+}
+
+/* Row hover effect */
+
+tbody tr:hover {
+    background: rgba(59, 130, 246, 0.08);
+    transition: 0.2s ease;
+
+}
+
+/* ===============================
+   EMPTY STATE
+================================= */
+
+.empty-state {
+    text-align: center;
+    opacity: 0.6;
+    padding: 1rem;
+    font-size: 0.9rem;
+
+}
